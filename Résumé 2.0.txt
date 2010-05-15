@@ -1,0 +1,65 @@
+DeepTech, Inc. (2008-present)
+- Envoy
+Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled.
+
+- Technical Service and Support
+Serves on DeepTech's Macintosh and network support team. Handles client questions over the phone, via remote access, and on site. Participates in technology infrastructure design and wiring for clients moving to new spaces.
+
+- Website for Wesley Kropp
+Designed and built website for jewelry designer Weskey W. Kropp ([http://www.wesleywkropp.com/](http://www.wesleywkropp.com/): valid HTML5, behavior and appearance tested in Internet Explorer 6 and up plus current versions of popular browsers).
+
+- Front-end web development
+Worked with the existing web team to develop a WebKit-optimized JavaScript UI library for DeepTech's technician portal, using jQuery extensively along with a small set of jQuery plugins. Controlled by an HTML API.
+
+- CalDAV
+Built a minimal CalDAV client in Lasso with APIs to add, edit, and remove events and watch for changes to events by other clients.
+
+- Reverse engineering
+Reconstructed a hash algorithm from an x86 executable.
+
+- Forensics
+Worked with the NYPD to recover data contributing to a criminal investigation.
+
+Other Experience
+- Snap Autocomplete
+Built a caching JavaScript autocomplete engine for Worcester Polytechnic Institute's [SNAP](http://www.wpi.edu/Admin/Police/Safety/snap.html).
+
+Montclair High School
+- FIRST Robotics Competition Team 555 (2003-2007)
+Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at the regional and international levels, including a regional Innovation in Control award for my programming using machine vision.
+
+Programming Competencies
+HTML5, CSS, JavaScript, JQuery, Objective-C, basic x86 assembly, PHP, Bash
+
+Certifications
+- Apple Certified Macintosh Technician
+
+Conferences attended
+- Macworld
+- WWDC
+- The Last HOPE
+- Hacking at Random
+- 26C3
+
+Affiliations
+- Alpha One Labs
+- NYC.js
+
+Mailing lists
+- Alpha One Labs
+- CAU GHQ
+- cocoa-dev
+- HoaP
+- HTINK
+- installer-dev
+- jQuery-dev
+- launchd-dev
+- lasso
+- Node.js
+- NYC Resistor
+- NYC.js
+- public-webapps
+- web-dev
+- WHATWG
+- www-HTML
+- xcode-users
