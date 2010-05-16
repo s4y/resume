@@ -54,119 +54,119 @@
 		}
 	],
 	"competencies": {
-		"programmingLanguages": [ "HTML5", "CSS", "JavaScript", "JQuery", "Objective-C", "basic x86 assembly", "PHP", "Bash" ]
+		"machineLanguages": [ "HTML5", "CSS", "JavaScript", "JQuery", "Objective-C", "basic x86 assembly", "PHP", "Bash" ]
 	},
 	"certifications": [
 		{
 			"name": "Apple Certified Macintosh Technician",
-			"url": "<BANANA>"
+			"url": "http://training.apple.com/certification/acmt"
 		}
 	],
 	"conferences": [
 		{
 			"name": "Macworld",
-			"year": "<BANANA>",
-			"url": "<BANANA>"
+			"year": "2008",
+			"url": "http://www.macworldexpo.com/"
 		},
 		{
 			"name": "WWDC",
-			"year": "<BANANA>",
-			"url": "<BANANA>"
+			"year": "2008",
+			"url": "http://developer.apple.com/wwdc/"
 		},
 		{
 			"name": "The Last Hope",
-			"year": "<BANANA>",
-			"url": "<BANANA>"
+			"year": "2008",
+			"url": "http://www.thelasthope.org/"
 		},
 		{
 			"name": "Hacking at Random",
-			"year": "<BANANA>",
-			"url": "<BANANA>"
+			"year": "2009",
+			"url": "https://wiki.har2009.org/"
 		},
 		{
 			"name": "26C3",
-			"year": "<BANANA>",
-			"url": "<BANANA>"
+			"year": "2009",
+			"url": "http://events.ccc.de/congress/2009/"
 		}
 	],
 	"affiliations": [
 		{
 			"name": "Alpha One Labs",
-			"url": "<BANANA>"
+			"url": "http://alphaonelabs.com/"
 		},
 		{
 			"name": "NYC.js",
-			"url": "<BANANA>"
+			"url": "http://groups.google.com/group/nycjs/"
 		}
 	],
 	"mailingLists": [
 		{
 			"name": "Alpha One Labs",
-			"url": "<BANANA>"
+			"url": "http://alphaonelabs.com/"
 		},
 		{
 			"name": "CAU GHQ",
-			"url": "<BANANA>"
+			"url": "http://caughq.org/"
 		},
 		{
 			"name": "cocoa-dev",
-			"url": "<BANANA>"
+			"url": "http://lists.apple.com/mailman/listinfo/cocoa-dev"
 		},
 		{
 			"name": "HoaP",
-			"url": "<BANANA>"
+			"url": "http://www.hackersonaplane.info/"
 		},
 		{
 			"name": "HTINK",
-			"url": "<BANANA>"
+			"url": "http://www.htink.net/"
 		},
 		{
 			"name": "installer-dev",
-			"url": "<BANANA>"
+			"url": "http://lists.apple.com/mailman/listinfo/installer-dev"
 		},
 		{
 			"name": "jQuery-dev",
-			"url": "<BANANA>"
+			"url": "http://forum.jquery.com/"
 		},
 		{
 			"name": "launchd-dev",
-			"url": "<BANANA>"
+			"url": "http://lists.apple.com/mailman/listinfo/launchd-dev"
 		},
 		{
-			"name": "lasso",
-			"url": "<BANANA>"
+			"name": "Lasso Talk",
+			"url": "http://www.lassosoft.com/"
 		},
 		{
 			"name": "Node.js",
-			"url": "<BANANA>"
+			"url": "http://nodejs.org/"
 		},
 		{
 			"name": "NYC Resistor",
-			"url": "<BANANA>"
+			"url": "http://www.nycresistor.com/"
 		},
 		{
 			"name": "NYC.js",
-			"url": "<BANANA>"
+			"url": "http://groups.google.com/group/nycjs/"
 		},
 		{
 			"name": "public-webapps",
-			"url": "<BANANA>"
+			"url": "http://lists.w3.org/Archives/Public/public-webapps/"
 		},
 		{
 			"name": "web-dev",
-			"url": "<BANANA>"
+			"url": "http://lists.apple.com/mailman/listinfo/web-dev"
 		},
 		{
 			"name": "WHATWG",
-			"url": "<BANANA>"
+			"url": "http://www.whatwg.org/"
 		},
 		{
-			"name": "www-HTML",
-			"url": "<BANANA>"
+			"name": "www-html",
+			"url": "http://lists.w3.org/Archives/Public/www-html/"
 		},
 		{
 			"name": "xcode-users",
-			"url": "<BANANA>"
+			"url": "http://lists.apple.com/mailman/listinfo/xcode-users"
 		}
 	]
 }
