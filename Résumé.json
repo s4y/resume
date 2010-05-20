@@ -66,36 +66,43 @@
 		{
 			"name": "Macworld",
 			"year": "2008",
+			"location": "San Francisco, CA, USA",
 			"url": "http://www.macworldexpo.com/"
 		},
 		{
 			"name": "WWDC",
 			"year": "2008",
+			"location": "San Francisco, CA, USA",
 			"url": "http://developer.apple.com/wwdc/"
 		},
 		{
 			"name": "The Last Hope",
 			"year": "2008",
+			"location": "New York, NY, United States",
 			"url": "http://www.thelasthope.org/"
 		},
 		{
 			"name": "Hacking at Random",
 			"year": "2009",
+			"location": "Vierhouten, The Netherlands",
 			"url": "https://wiki.har2009.org/"
 		},
 		{
 			"name": "26C3",
 			"year": "2009",
+			"location": "Berlin, Germany",
 			"url": "http://events.ccc.de/congress/2009/"
 		}
 	],
 	"affiliations": [
 		{
 			"name": "Alpha One Labs",
+			"location": "Brooklyn, NY, United States",
 			"url": "http://alphaonelabs.com/"
 		},
 		{
 			"name": "NYC.js",
+			"location": "New York, NY, United States",
 			"url": "http://groups.google.com/group/nycjs/"
 		}
 	],
