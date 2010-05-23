@@ -2,8 +2,7 @@
 	"name": "Sidney San Martín",
 	"contact": [
 		{ "method": "email", "value": "hire@sidneysm.com" },
-		{ "method": "telephone", "value": "+1 (973) 933-1442" },
-		{ "method": "xri", "value": "=ssm" }
+		{ "method": "telephone", "value": "+1 (973) 933-1442" }
 	],
 	"experience": [
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
@@ -12,7 +11,7 @@
 					"description": "Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled."
 				},
 				{
-					"name": "Technical Service and Support",
+					"name": "Technical service and support",
 					"description": "Serves on DeepTech's Macintosh and network support team. Handles client questions over the phone, via remote access, and on site. Participates in technology infrastructure design and wiring for clients moving to new spaces."
 				},
 				{
@@ -37,29 +36,40 @@
 				}
 			]
 		},
-		{ "name": "Montclair High School", "projects": [
-				{
-					"name": "FIRST Robotics Competition Team 555",
-					"time": { "start": "2003", "end": "2007" },
-					"description": "Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at the regional and international levels, including a regional Innovation in Control award for my programming using machine vision."
-				}
-			]
-		},
 		{ "name": "Other experience", "projects": [
 				{
 					"name": "Snap Autocomplete",
 					"description": "Built a caching JavaScript autocomplete engine for Worcester Polytechnic Institute's [SNAP](http://www.wpi.edu/Admin/Police/Safety/snap.html)."
+				},
+				{
+					"name": "FIRST Robotics Team 555, Montclair High School, New Jersey",
+					"time": { "start": "2003", "end": "2007" },
+					"description": "Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at the regional and international levels, including a regional Innovation in Control award for my programming using machine vision."
 				}
 			]
 		}
 	],
 	"competencies": [
-		{ "name": "Programming languages": [ "HTML5", "CSS", "JavaScript", "JQuery", "Objective-C", "basic x86 assembly", "PHP", "Bash" ]
+		{ "category": "Programming languages", "values": [
+		"HTML5", "CSS", "JavaScript", "jQuery", "PHP", "Objective-C", "basic x86 assembly", "Bash"
+		]}
 	],
 	"certifications": [
 		{
 			"name": "Apple Certified Macintosh Technician",
 			"url": "http://training.apple.com/certification/acmt"
+		}
+	],
+	"affiliations": [
+		{
+			"name": "Alpha One Labs",
+			"location": "Brooklyn, NY, United States",
+			"url": "http://alphaonelabs.com/"
+		},
+		{
+			"name": "NYC.js",
+			"location": "New York, NY, United States",
+			"url": "http://groups.google.com/group/nycjs/"
 		}
 	],
 	"conferences": [
@@ -92,18 +102,6 @@
 			"year": "2009",
 			"location": "Berlin, Germany",
 			"url": "http://events.ccc.de/congress/2009/"
-		}
-	],
-	"affiliations": [
-		{
-			"name": "Alpha One Labs",
-			"location": "Brooklyn, NY, United States",
-			"url": "http://alphaonelabs.com/"
-		},
-		{
-			"name": "NYC.js",
-			"location": "New York, NY, United States",
-			"url": "http://groups.google.com/group/nycjs/"
 		}
 	],
 	"mailingLists": [
