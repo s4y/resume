@@ -1,0 +1,80 @@
+@media print{
+	a{
+		text-decoration: none;
+	}
+	li ul li{
+		page-break-inside: avoid;
+	}
+}
+body{
+	font: 16px Garamond, serif;
+	padding: 0.5em 2em;
+}
+h1, h2, h3{
+	margin: 0.5em 0;
+	page-break-after: avoid;
+}
+h2, h3{
+	font-weight: normal;
+}
+h1{
+	font-size: 1.2em;
+}
+h2{
+	font-size: 1.1em;
+}
+h3{
+	font-size: 1em;
+	font-style: italic;
+	margin-bottom: 0;
+}
+h1+p, h2+p, h3+p{
+	margin-top: 0;
+}
+a{
+	color: black;
+}
+a:visited{
+	color: #005;
+}
+ul{
+	margin: 0.5em 0;
+	padding-left: 1em;
+}
+li{
+	list-style: none;
+}
+.times{
+	font-size: 0.8em;
+	font-weight: normal;
+	vertical-align: middle;
+}
+#resume{
+	margin: 0 auto;
+	max-width: 50em;
+}
+#info{
+	border-bottom: 1px solid #CCC;
+	padding: 1em 5em;
+	text-align: center;
+}
+#info p{
+	margin: 0.3em;
+}
+#name{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#contact span, #competencies ul li, #affiliations li, #conferences li, #mailingLists li{
+	background: #EEE;
+	display: inline-block;
+	margin: 0.4em;
+	padding: 0.2em;
+}
+#affiliations li, #conferences li{
+	padding: 0.5em;
+}
+#affiliations .location, #conferences .location{
+	color: #444;
+	font-size: 0.9em;
+}

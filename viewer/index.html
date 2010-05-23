@@ -2,38 +2,108 @@
 
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>R&eacute;sum&eacute; viewer</title>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.haml.js"></script>
+	<script type="text/javascript" src="js/showdown.js"></script>
 	<script type="text/javascript">
+		function preprocess(template, data){
+			if ($.isArray(template)) {
+				template = Array.prototype.slice.call(template, 0);
+				for(var i = 0, l = template.length; i < l; i++){
+					template.splice(i, 1, preprocess(template[i], data));
+				}
+			} else if($.isPlainObject(template)) {
+				if ('key' in template) {
+					if (template.handler) {
+						template = template.handler.call(data[template.key]);
+					} else if (template.children) {
+						template = $.map(data[template.key], function(item){
+							return [preprocess(template.children, item)];
+						});
+					} else if (template.conditional) {
+						template = data[template.key] ? preprocess(template.conditional, data) : [];
+					} else {
+						template = (template.key === '' ? data : data[template.key] || '').toString();
+					}
+				} else {
+					template = $.extend({}, template);
+					for (var key in template){
+						template[key] = preprocess(template[key], data);
+					}
+				}
+			}
+			return template;
+		}
+		
 		$(document).ready(function(){
 			var résuméView = $.haml.placeholder(function(résumé){
-				
-				function stringForTime(time){
-					return time && time.start ? ('(' + time.start + (time.start !== time.end ? '-' + (time.end || 'present') : '') + ')') : '';
-				}
 				
 				if (!$.isPlainObject(résumé)) {
 					return ['#error', 'No résumé loaded'];
 				};
-				return ['#resume'].concat(
-					(résumé.name || résumé.contact) ?
-					  [['#info'].
-					    concat(résumé.name ? [['#name', résumé.name]] : []).
-					    concat([résumé.contact ? ['%p#contact'].concat($.map(résumé.contact, function(contact){ return [[['%span', contact.method + ': ' + contact.value]]] })) : []])
-					] : [],
-					résumé.experience ? [
-					  ['%h1', 'Experience'],
-					  ['%ul.experience'].concat($.map(résumé.experience, function(experience){ return [[['%li',
-					    ['%h2', experience.name].concat(experience.time ? [' ', ['%span.times', stringForTime(experience.time)]] : [])].concat(
-						  experience.projects ? [
-						    ['%ul.projects'].concat([['%li', 'win']])
-						] : [])
-					  ]] }))
-					] : []
-					);
 				
-				return haml;
+				var converter = new Showdown.converter();
+				function parseMarkdown(){
+					return $(converter.makeHtml(this));
+				}
+				function stringForTime(){
+					return this && this.start ? ('(' + this.start + (this.start !== this.end ? '-' + (this.end || 'present') : '') + ')') : '';
+				}
+				if (résumé.name) {
+					document.title = résumé.name + ' – Résumé'
+				}
+				
+				return preprocess(['#resume',
+					['#info',
+						['%p#name', {key: 'name'}],
+						['%p#contact', {key:'contact', children:['%span', {key:'method'}, ': ', {key:'value'}]}]
+					],
+					{key: 'experience', conditional: [
+						['%h1', "Experience"],
+						['%ul#experience', {key: 'experience', children:[ '%li',
+							['%h2', {key:'name'}, {key: 'time', conditional:[' ', ['%span.times', {key:'time', handler:stringForTime}]]}],
+							{key: 'projects', conditional:['%ul.projects', {key: 'projects', children:[ '%li',
+								['%h3', {key: 'name'}, {key: 'time', conditional:[' ', ['%span.times', {key:'time', handler:stringForTime}]]}],
+								{key: 'description', handler:parseMarkdown}
+							]}]}
+						]}]
+					]},
+					{key: 'competencies', conditional:[
+						['%h1', 'Competencies'],
+						[ '%ul#competencies', {key: 'competencies', children:[ '%li',
+							['%h2', {key: 'category'}],
+							['%ul', {key: 'values', children:[
+								'%li', {key: ''}
+							]}]
+						]}]
+					]},
+					{key: 'certifications', conditional:[
+						['%h1', 'Certifications'],
+						['%ul#certifications', {key: 'certifications', children:[ '%li',
+							['%a', {href: {key:'url'}}, {key: 'name'}]
+						]}]
+					]},
+					{key: 'affiliations', conditional:[
+						['%h1', 'Affiliations'],
+						['%ul#affiliations', {key: 'affiliations', children:[ '%li',
+							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}]], ['%div.location', {key: 'location'}]
+						]}]
+					]},
+					{key: 'conferences', conditional:[
+						['%h1', 'Conferences'],
+						['%ul#conferences', {key: 'conferences', children:[ '%li',
+							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}], {key: 'year', conditional:[' ', ['%span.times', {key:'year'}]]}], ['%div.location', {key: 'location'}]
+						]}]
+					]},
+					{key: 'mailingLists', conditional:[
+						['%h1', 'Mailing Lists'],
+						['%ul#mailingLists', {key: 'mailingLists', children:[
+							['%li', ['%div', ['%a', {href: {key:'url'}}, {key: 'name'}]]]
+						]}]
+					]}
+				], résumé);
 			});
 			$(document.body).append(résuméView.inject());
 			window.loadRésumé = function(résumé){ résuméView.update(résumé); }
@@ -45,80 +115,7 @@
 		});
 	</script>
 
-	<style>
-		body{
-			font: 16px Garamond, serif;
-			padding: 0.5em 2em;
-		}
-		h1, h2, h3{
-			margin: 0.5em 0;
-		}
-		h1{
-			font-size: 1.3em;
-		}
-		h2{
-			font-weight: normal;
-			font-size: 1.2em;
-		}
-		h3{
-			font-size: 1.1em;
-			margin: 0;
-		}
-		h1+p, h2+p, h3+p{
-			margin-top: 0;
-		}
-		ul{
-			padding-left: 1em;
-		}
-		li{
-			list-style: none;
-		}
-		#info{
-			text-align: center;
-			padding: 1em 5em;
-			border-bottom: 1px solid #CCC;
-		}
-		#info p{
-			margin: 0.3em;
-		}
-		#name{
-			font-weight: bold;
-			font-size: 1.2em;
-		}
-		#contact span{
-			display: inline-block;
-			background: #EEE;
-			padding: 0 0.5em;
-			margin: 0.3em;
-		}
-		#experience>.experience>h2>.times{
-			font-size: 0.7em;
-			vertical-align: middle;
-			font-weight: normal;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div id="resume">
-	<div id="info">
-		<p id="name">Sidney San Mart&iacute;n</p>
-		<p id="contact"><span>email: hire@sidneysm.com</span><span>telephone: +1 (973) 342-3515</span><span>xri: =ssm</span></p>
-	</div>
-	<h1>Experience</h1>
-	<ul class="experience">
-		<li>
-			<h2>DeepTech, Inc. <span class="times">(2008-present)</span></h2>
-			<ul class="projects">
-				<li>
-					<h3>Envoy</h3>
-					<p>Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled.</p>
-				</li>
-				<li>
-					<h3>Technical Service and Support</h3>
-					<p>Serves on DeepTech's Macintosh and network support team. Handles client questions over the phone, via remote access, and on site. Participates in technology infrastructure design and wiring for clients moving to new spaces.</p>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
