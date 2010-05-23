@@ -53,9 +53,9 @@
 			]
 		}
 	],
-	"competencies": {
-		"machineLanguages": [ "HTML5", "CSS", "JavaScript", "JQuery", "Objective-C", "basic x86 assembly", "PHP", "Bash" ]
-	},
+	"competencies": [
+		{ "name": "Programming languages": [ "HTML5", "CSS", "JavaScript", "JQuery", "Objective-C", "basic x86 assembly", "PHP", "Bash" ]
+	],
 	"certifications": [
 		{
 			"name": "Apple Certified Macintosh Technician",
