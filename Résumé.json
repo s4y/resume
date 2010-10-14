@@ -50,7 +50,7 @@
 		}
 	],
 	"competencies": [
-		{ "category": "Programming languages", "values": [
+		{ "category": "Languages", "values": [
 		"HTML5", "CSS", "JavaScript", "jQuery", "PHP", "Objective-C", "basic x86 assembly", "Bash"
 		]}
 	],
