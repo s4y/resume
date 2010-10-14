@@ -100,8 +100,16 @@
 		{
 			"name": "26C3",
 			"year": "2009",
+			"extra": "volunteer",
 			"location": "Berlin, Germany",
 			"url": "http://events.ccc.de/congress/2009/"
+		},
+		{
+			"name": "The Next Hope",
+			"year": "2010",
+			"extra":"volunteer, trusted ops",
+			"location": "New York, NY, United States",
+			"url": "http://thenexthope.org/"
 		}
 	],
 	"mailingLists": [
