@@ -34,6 +34,10 @@
 		},
 		{ "name": "Other experience", "projects": [
 				{
+					"name": "Debugging",
+					"description": "Reduce and report bugs in third-party software on a regular basis. Credited for security issues in Mac OS (fixed in [Security Update 2010-002 / Mac OS X v10.6.3](http://support.apple.com/kb/ht4077)) and iOS (fixed in [4.0](http://support.apple.com/kb/ht4225)). Credited for non-security issue in cURL (fixed in [7.21.1](http://curl.haxx.se/mail/lib-2010-08/0146.html))."
+				},
+				{
 					"name": "Snap Autocomplete",
 					"description": "Built a caching JavaScript autocomplete engine for Worcester Polytechnic Institute's [SNAP](http://www.wpi.edu/Admin/Police/Safety/snap.html)."
 				},
