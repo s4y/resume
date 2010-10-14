@@ -4,130 +4,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>R&eacute;sum&eacute; viewer</title>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.haml.js"></script>
-	<script type="text/javascript" src="js/showdown.js"></script>
-	<script type="text/javascript">
-		function preprocess(template, data){
-			if ($.isArray(template)) {
-				template = Array.prototype.slice.call(template, 0);
-				for(var i = 0, l = template.length; i < l; i++){
-					template.splice(i, 1, preprocess(template[i], data));
-				}
-			} else if($.isPlainObject(template)) {
-				if ('key' in template) {
-					if (template.handler) {
-						template = template.handler.call(data[template.key]);
-					} else if (template.children) {
-						template = $.map(data[template.key], function(item){
-							return [preprocess(template.children, item)];
-						});
-					} else if (template.conditional) {
-						template = data[template.key] ? preprocess(template.conditional, data) : [];
-					} else {
-						template = (template.key === '' ? data : data[template.key] || '').toString();
-					}
-				} else {
-					template = $.extend({}, template);
-					for (var key in template){
-						template[key] = preprocess(template[key], data);
-					}
-				}
-			}
-			return template;
-		}
-		
-		$(document).ready(function(){
-			
-			var $loadError = $('#loadError'), résuméView = $.haml.placeholder(function(résumé){
-				
-				if (!$.isPlainObject(résumé)) {
-					return document.createTextNode('');
-				};
-				
-				var converter = new Showdown.converter();
-				function parseMarkdown(){
-					return $(converter.makeHtml(this));
-				}
-				function stringForTime(){
-					return this && this.start ? ('(' + this.start + (this.start !== this.end ? '-' + (this.end || 'present') : '') + ')') : '';
-				}
-				if (résumé.name) {
-					document.title = résumé.name + ' – Résumé'
-				}
-				
-				return preprocess(['#resume',
-					['#info',
-						['%p#name', {key: 'name'}],
-						['%p#contact', {key:'contact', children:['%span', {key:'method'}, ': ', {key:'value'}]}]
-					],
-					{key: 'experience', conditional: [
-						['%h1', "Experience"],
-						['%ul#experience', {key: 'experience', children:[ '%li',
-							['%h2', {key:'name'}, {key: 'time', conditional:[' ', ['%span.times', {key:'time', handler:stringForTime}]]}],
-							{key: 'projects', conditional:['%ul.projects', {key: 'projects', children:[ '%li',
-								['%h3', {key: 'name'}, {key: 'time', conditional:[' ', ['%span.times', {key:'time', handler:stringForTime}]]}],
-								{key: 'description', handler:parseMarkdown}
-							]}]}
-						]}]
-					]},
-					{key: 'competencies', conditional:[
-						['%h1', 'Competencies'],
-						[ '%ul#competencies', {key: 'competencies', children:[ '%li',
-							['%h2', {key: 'category'}],
-							['%ul', {key: 'values', children:[
-								'%li', {key: ''}
-							]}]
-						]}]
-					]},
-					{key: 'certifications', conditional:[
-						['%h1', 'Certifications'],
-						['%ul#certifications', {key: 'certifications', children:[ '%li',
-							['%a', {href: {key:'url'}}, {key: 'name'}]
-						]}]
-					]},
-					{key: 'affiliations', conditional:[
-						['%h1', 'Affiliations'],
-						['%ul#affiliations', {key: 'affiliations', children:[ '%li',
-							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}]], ['%div.location', {key: 'location'}]
-						]}]
-					]},
-					{key: 'conferences', conditional:[
-						['%h1', 'Conferences'],
-						['%ul#conferences', {key: 'conferences', children:[ '%li',
-							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}], {key: 'year', conditional:[' ', ['%span.times', {key:'year'}]]}], ['%div.location', {key: 'location'}]
-						]}]
-					]},
-					{key: 'mailingLists', conditional:[
-						['%h1', 'Mailing Lists'],
-						['%ul#mailingLists', {key: 'mailingLists', children:[
-							['%li', ['%div', ['%a', {href: {key:'url'}}, {key: 'name'}]]]
-						]}]
-					]}
-				], résumé);
-			});
-			$(document.body).append(résuméView.inject());
-			window.loadRésumé = function(résumé){ résuméView.update(résumé); }
-			
-			$.ajax({
-				url: "resume.json",
-				dataType: 'json',
-				success: function(d){
-					résuméView.update(d);
-				},
-				error: function(){
-					$loadError.addClass('visible');
-				}
-			});
-			
-		});
-	</script>
-
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<noscript>
-		<div class="error">This page uses JavaScript to display my r&eacute;sum&eacute;. Please enable JavaScript in your web browser and reload the page, or contact me at <a href="mailto:hire@sidneysm.com">hire@sidneysm.com</a> for an offline copy.</div>
-	</noscript>
-	<div id="loadError" class="error">I'm sorry, but there was a problem loading my r&eacute;sum&eacute;. Let me know at <a href="mailto:hire@sidneysm.com">hire@sidneysm.com</a>, and I'll be happy to send you an offline copy.</div>
+<noscript>
+	<div class="error">This page uses JavaScript to display my r&eacute;sum&eacute;. Please enable JavaScript in your web browser and reload the page, or contact me at <a href="mailto:hire@sidneysm.com">hire@sidneysm.com</a> for an offline copy.</div>
+</noscript>
+<div id="loadError" class="error">I'm sorry, but there was a problem loading my r&eacute;sum&eacute;. Let me know at <a href="mailto:hire@sidneysm.com">hire@sidneysm.com</a>, and I'll be happy to send you a copy.</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.haml.js"></script>
+<script type="text/javascript" src="js/stencil.js"></script>
+<script type="text/javascript" src="js/showdown.js"></script>
+<script type="text/javascript" src="js/resume.js" data-src="resume.json"></script>
