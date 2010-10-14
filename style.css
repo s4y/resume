@@ -11,9 +11,10 @@ body{
 	padding: 0.5em 2em;
 }
 .error{
-	background: #FFA;
+	background: #FCC;
 	padding: 10px;
-	border: 2px solid #FD8;
+	border: 2px solid #F99;
+	text-align: center;
 }
 #loadError{
 	display: none;
