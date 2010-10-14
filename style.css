@@ -21,19 +21,6 @@ body{
 #loadError.visible{
 	display: block;
 }
-#placeholder {
-	color: rgba(0, 0, 0, 0.3);
-	font-size: 2em;
-	text-align: center;
-	padding: 1em;
-}
-#placeholder:after{
-	content: " \2014";
-}
-#placeholder:before{
-	content: "\2014 ";
-}
-
 h1, h2, h3{
 	margin: 0.5em 0;
 	page-break-after: avoid;

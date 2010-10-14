@@ -42,7 +42,7 @@
 			var $loadError = $('#loadError'), résuméView = $.haml.placeholder(function(résumé){
 				
 				if (!$.isPlainObject(résumé)) {
-					return ['#placeholder', 'No résumé loaded'];
+					return document.createTextNode('');
 				};
 				
 				var converter = new Showdown.converter();
