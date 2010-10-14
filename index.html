@@ -38,10 +38,11 @@
 		}
 		
 		$(document).ready(function(){
-			var résuméView = $.haml.placeholder(function(résumé){
+			
+			var $loadError = $('#loadError'), résuméView = $.haml.placeholder(function(résumé){
 				
 				if (!$.isPlainObject(résumé)) {
-					return ['#error', 'No résumé loaded'];
+					return ['#placeholder', 'No résumé loaded'];
 				};
 				
 				var converter = new Showdown.converter();
@@ -108,8 +109,15 @@
 			$(document.body).append(résuméView.inject());
 			window.loadRésumé = function(résumé){ résuméView.update(résumé); }
 			
-			$.getJSON("../Résumé.json", function(d){
-				résuméView.update(d);
+			$.ajax({
+				url: "resume.json",
+				dataType: 'json',
+				success: function(d){
+					résuméView.update(d);
+				},
+				error: function(){
+					$loadError.addClass('visible');
+				}
 			});
 			
 		});
@@ -119,3 +127,7 @@
 </head>
 
 <body>
+	<noscript>
+		<div class="error">This application uses JavaScript to render r&eacute;sum&eacute;s. Please make sure that JavaScript is enabled in your web browser and reload the page.</div>
+	</noscript>
+	<div id="loadError" class="error">The default r&eacute;sum&eacute; could not be loaded. Please contact <a href="mailto:hire@sidneysm.com">hire@sidneysm.com</a> with your computer's operating system and web browser. I'd love your help finding the problem with this website, but would be happy to provide an offline copy of my r&eacute;sume in the interim.</div>

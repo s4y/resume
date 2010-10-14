@@ -10,6 +10,30 @@ body{
 	font: 16px Garamond, serif;
 	padding: 0.5em 2em;
 }
+.error{
+	background: #FFA;
+	padding: 10px;
+	border: 2px solid #FD8;
+}
+#loadError{
+	display: none;
+}
+#loadError.visible{
+	display: block;
+}
+#placeholder {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 2em;
+	text-align: center;
+	padding: 1em;
+}
+#placeholder:after{
+	content: " \2014";
+}
+#placeholder:before{
+	content: "\2014 ";
+}
+
 h1, h2, h3{
 	margin: 0.5em 0;
 	page-break-after: avoid;
@@ -70,6 +94,10 @@ li{
 	display: inline-block;
 	margin: 0.4em;
 	padding: 0.2em;
+	/* IE 6 */
+    zoom: 1;
+    *display: inline;
+    _height: 1px;
 }
 #affiliations li, #conferences li{
 	padding: 0.5em;
