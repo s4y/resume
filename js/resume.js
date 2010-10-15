@@ -5,7 +5,7 @@
 				template = ['#resume',
 					['#info',
 						['%p#name', {key: 'name'}],
-						['%p#contact', {key:'contact', children:['%span', {key:'method'}, ': ', {key:'value'}]}]
+						['%p#contact', {key:'contact', children:['%span', {key:'method'}, ': ', ['%a', {href:{key:'link'}}, {key:'value'}]]}]
 					],
 					{key: 'experience', conditional: [
 						['%h1', "Experience"],
@@ -41,7 +41,7 @@
 					{key: 'conferences', conditional:[
 						['%h1', 'Conferences'],
 						['%ul#conferences', {key: 'conferences', children:[ '%li',
-							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}], {key: 'year', conditional:[' ', ['%span.times', {key:'year'}]]}], ['%div.location', {key: 'location'}]
+							['%div', ['%a', {href: {key:'url'}}, {key: 'name'}], {key: 'extra', conditional:[' ', ['%span', '(', {key:'extra'}, ')']]}, {key: 'year', conditional:[' ', ['%span.times', {key:'year'}]]}], ['%div.location', {key: 'location'}]
 						]}]
 					]},
 					{key: 'mailingLists', conditional:[

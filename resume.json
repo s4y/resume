@@ -1,30 +1,34 @@
 {
 	"name": "Sidney San Martín",
 	"contact": [
-		{ "method": "email", "value": "hire@sidneysm.com" },
-		{ "method": "telephone", "value": "+1 (973) 933-1442" }
+		{ "method": "email", "value": "hire@sidneysm.com", "link": "mailto:hire@sidneysm.com" },
+		{ "method": "telephone", "value": "+1 (973) 933-1442", "link": "tel:+19739331442" }
 	],
 	"experience": [
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
 				{
 					"name": "Envoy",
-					"description": "Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled."
+					"description": "Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
+				},
+				{
+					"name": "Front-end web development",
+					"description": "Worked with the backend web team to develop a DOM-controlled JavaScript UI library for DeepTech's technician portal, using jQuery extensively along with a small set of jQuery plugins. Ongoing."
+				},
+				{
+					"name": "Hans Haacke: News",
+					"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke's “News” piece. On display as part of [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum."
+				},
+				{
+					"name": "Lasso CalDAV bridge",
+					"description": "Built a CalDAV bridge for DeepTech's technician scheduling system, replacing an aging calendar solution with one that works across modern mobile devices and software. In progress."
 				},
 				{
 					"name": "Technical service and support",
 					"description": "Serves on DeepTech's Macintosh and network support team. Handles client questions over the phone, via remote access, and on site. Participates in technology infrastructure design and wiring for clients moving to new spaces."
 				},
 				{
-					"name": "Front-end web development",
-					"description": "Worked with the existing web team to develop a WebKit-optimized JavaScript UI library for DeepTech's technician portal, using jQuery extensively along with a small set of jQuery plugins. Controlled by an HTML API."
-				},
-				{
-					"name": "Lasso CalDAV interface",
-					"description": "Built a minimal CalDAV client in Lasso with APIs to add, edit, and remove events and watch for changes to events by other clients."
-				},
-				{
 					"name": "Reverse engineering",
-					"description": "Reconstructed a hash algorithm from an x86 executable."
+					"description": "Reconstructed code based on disassembly of an x86 binary."
 				},
 				{
 					"name": "Forensics",
@@ -35,7 +39,7 @@
 		{ "name": "Other experience", "projects": [
 				{
 					"name": "Debugging",
-					"description": "Reduce and report bugs in third-party software on a regular basis. Credited for security issues in Mac OS (fixed in [Security Update 2010-002 / Mac OS X v10.6.3](http://support.apple.com/kb/ht4077)) and iOS (fixed in [4.0](http://support.apple.com/kb/ht4225)). Credited for non-security issue in cURL (fixed in [7.21.1](http://curl.haxx.se/mail/lib-2010-08/0146.html))."
+					"description": "Reduces and reports bugs in third-party software on a regular basis. Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)), credited for other issue in cURL (patched in [7.21.1](http://curl.haxx.se/mail/lib-2010-08/0146.html))."
 				},
 				{
 					"name": "Snap Autocomplete",
@@ -70,6 +74,16 @@
 			"name": "NYC.js",
 			"location": "New York, NY, United States",
 			"url": "http://groups.google.com/group/nycjs/"
+		},
+		{
+			"name": "The Product Group",
+			"location": "New York, NY, United States",
+			"url": "http://tpgblog.com/theproductgroup/"
+		},
+		{
+			"name": "Hack and Tell",
+			"location": "New York, NY, United States",
+			"url": "http://hackandtell.org/"
 		}
 	],
 	"conferences": [
