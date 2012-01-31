@@ -8,27 +8,23 @@
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
 				{
 					"name": "Envoy",
-					"description": "Designed and developed Envoy (a Mac OS-native proprietary asset tracking system) as a replacement for legacy tools to audit and manage 1000+ client computers. Envoy provides regular resource utilization reports; lets users submit support requests; integrates with DeepTech's remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
+					"description": "Developed Envoy (a Mac-native proprietary asset tracking system) to audit and manage 750+ client computers. Envoy sends in regular reports; lets users submit support requests; integrates with DeepTech\u2019s remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
 				},
 				{
-					"name": "Front-end web development",
-					"description": "Worked with the backend web team to develop a DOM-controlled JavaScript UI library for DeepTech's technician portal, using jQuery extensively along with a small set of jQuery plugins. Ongoing."
+					"name": "Technician tools",
+					"description": "Frontend and backend development on web system used by technicians for asset tracking, case managment, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV calendars, and vendor APIs. Ongoing."
 				},
 				{
 					"name": "Hans Haacke: News",
-					"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke's “News” piece. On display as part of [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum."
-				},
-				{
-					"name": "Lasso CalDAV bridge",
-					"description": "Built a CalDAV bridge for DeepTech's technician scheduling system, replacing an aging calendar solution with one that works across modern mobile devices and software. In progress."
+				"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke\u2019s “News” piece. Displayed in [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum, now in [SFMOMA\u2019s permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)."
 				},
 				{
 					"name": "Technical service and support",
-					"description": "Serves on DeepTech's Macintosh and network support team. Handles client questions over the phone, via remote access, and on site. Participates in technology infrastructure design and wiring for clients moving to new spaces."
+					"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site. (Emergencies only, lately.)"
 				},
 				{
 					"name": "Reverse engineering",
-					"description": "Reconstructed code based on disassembly of an x86 binary."
+					"description": "Reconstructed C code from an x86 executable."
 				},
 				{
 					"name": "Forensics",
@@ -36,54 +32,56 @@
 				}
 			]
 		},
-		{ "name": "Other experience", "projects": [
-				{
-					"name": "Debugging",
-					"description": "Reduces and reports bugs in third-party software on a regular basis. Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)), credited for other issue in cURL (patched in [7.21.1](http://curl.haxx.se/mail/lib-2010-08/0146.html))."
-				},
-				{
-					"name": "Snap Autocomplete",
-					"description": "Built a caching JavaScript autocomplete engine for Worcester Polytechnic Institute."
-				},
-				{
-					"name": "FIRST Robotics Team 555, Montclair High School, New Jersey",
-					"time": { "start": "2003", "end": "2007" },
-					"description": "Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at the regional and international levels, including a regional Innovation in Control award for my programming using machine vision."
-				}
-			]
-		}
+		{ "name": "Personal", "projects": [
+			{
+				"name": "Debugging",
+				"description": "Reduce and report bugs in third-party software on a regular basis. Not afraid to go to the source (tracked a recent jQuery performance oddity back to its cause inside WebKit).\n\nCredited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754))."
+			},
+			{
+				"name": "Answering questions",
+				"description": "Enjoy helping other programmers, in the top 10% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious) for HTML- and JavaScript-related questions."
+			},
+			{
+				"name": "Hack Club",
+				"time": { "start": "2011", "end": "2011" },
+				"description": "Lead programmer on a team of three, built an autonomous lego robot in twelve solid hours at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. [Won fame and fortune](http://breadpig.com/2011/01/18/hack-club-1-total-success/)."
+			},
+			{
+				"name": "FIRST Team 555",
+				"time": { "start": "2003", "end": "2007" },
+				"description": "Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at regional and international levels."
+			}
+		] },
+		{ "name": "Current and upcoming", "projects": [
+			{
+				"name": "Git commit message formatting",
+				"description": "Right now, [Git](http://git-scm.com/) makes its users pre-format their commit messages (conventinally, by breaking each line at around 72-characters). Working on giving Git the ability to format commit messages when you view them instead."
+			},
+			{
+				"name": "Hacker School",
+				"description": "Attending batch[2] of [Hacker School](http://www.hackerschool.com/), a three-month, full time retreat where good programmers become better programmers together."
+			}
+		] }
 	],
-	"competencies": [
-		{ "category": "Languages", "values": [
-		"HTML5", "CSS", "JavaScript", "jQuery", "PHP", "Objective-C", "basic x86 assembly", "Bash"
-		]}
+	"environments": [
+		"JavaScript", "HTML", "CSS", "jQuery", "Node.js", "PHP", "Objective-C", "basic x86 assembly", "Bash", "LassoScript"
 	],
-	"certifications": [
-		{
-			"name": "Apple Certified Macintosh Technician",
-			"url": "http://training.apple.com/certification/acmt"
-		}
-	],
-	"affiliations": [
-		{
-			"name": "Alpha One Labs",
-			"location": "Brooklyn, NY, United States",
-			"url": "http://alphaonelabs.com/"
-		},
+	"meetups": [
 		{
 			"name": "NYC.js",
-			"location": "New York, NY, United States",
 			"url": "http://groups.google.com/group/nycjs/"
 		},
 		{
-			"name": "The Product Group",
-			"location": "New York, NY, United States",
-			"url": "http://tpgblog.com/theproductgroup/"
+			"name": "Hack and Tell",
+			"url": "http://hackandtell.org/"
 		},
 		{
-			"name": "Hack and Tell",
-			"location": "New York, NY, United States",
-			"url": "http://hackandtell.org/"
+			"name": "CTO School",
+			"url": "http://www.ctoschool.org/"
+		},
+		{
+			"name": "New York MongoDB User Group",
+			"url": "http://www.meetup.com/New-York-MongoDB-User-Group/"
 		}
 	],
 	"conferences": [
@@ -121,79 +119,16 @@
 		{
 			"name": "The Next Hope",
 			"year": "2010",
-			"extra":"volunteer, trusted ops",
+			"extra":"trusted ops",
 			"location": "New York, NY, United States",
 			"url": "http://thenexthope.org/"
-		}
-	],
-	"mailingLists": [
-		{
-			"name": "Alpha One Labs",
-			"url": "http://alphaonelabs.com/"
 		},
 		{
-			"name": "CAU GHQ",
-			"url": "http://caughq.org/"
-		},
-		{
-			"name": "cocoa-dev",
-			"url": "http://lists.apple.com/mailman/listinfo/cocoa-dev"
-		},
-		{
-			"name": "HoaP",
-			"url": "http://www.hackersonaplane.info/"
-		},
-		{
-			"name": "HTINK",
-			"url": "http://www.htink.net/"
-		},
-		{
-			"name": "installer-dev",
-			"url": "http://lists.apple.com/mailman/listinfo/installer-dev"
-		},
-		{
-			"name": "jQuery-dev",
-			"url": "http://forum.jquery.com/"
-		},
-		{
-			"name": "launchd-dev",
-			"url": "http://lists.apple.com/mailman/listinfo/launchd-dev"
-		},
-		{
-			"name": "Lasso Talk",
-			"url": "http://www.lassosoft.com/"
-		},
-		{
-			"name": "Node.js",
-			"url": "http://nodejs.org/"
-		},
-		{
-			"name": "NYC Resistor",
-			"url": "http://www.nycresistor.com/"
-		},
-		{
-			"name": "NYC.js",
-			"url": "http://groups.google.com/group/nycjs/"
-		},
-		{
-			"name": "public-webapps",
-			"url": "http://lists.w3.org/Archives/Public/public-webapps/"
-		},
-		{
-			"name": "web-dev",
-			"url": "http://lists.apple.com/mailman/listinfo/web-dev"
-		},
-		{
-			"name": "WHATWG",
-			"url": "http://www.whatwg.org/"
-		},
-		{
-			"name": "www-html",
-			"url": "http://lists.w3.org/Archives/Public/www-html/"
-		},
-		{
-			"name": "xcode-users",
-			"url": "http://lists.apple.com/mailman/listinfo/xcode-users"
+			"name": "World Maker Faire",
+			"year": "2011",
+			"extra":"volunteer",
+			"location": "Queens, NY, United States",
+			"url": "http://makerfaire.com/newyork/2011/"
 		}
 	]
 }

@@ -1,11 +1,13 @@
+/* Disabling print styles for the moment. Showing URLs inline adds too much
+ * bloat, and removing link underlines makes PDFs less useful.
 @media print{
 	a{
 		text-decoration: none;
 	}
-	li ul li{
+	li ul li, p{
 		page-break-inside: avoid;
 	}
-}
+} */
 body{
 	font: 16px Garamond, serif;
 	padding: 0.5em 2em;
@@ -23,7 +25,6 @@ body{
 	display: block;
 }
 h1, h2, h3{
-	margin: 0.5em 0;
 	page-break-after: avoid;
 }
 h2, h3{
@@ -39,6 +40,9 @@ h3{
 	font-size: 1em;
 	font-style: italic;
 	margin-bottom: 0;
+}
+p{
+	margin: 0.5em 0;
 }
 h1+p, h2+p, h3+p{
 	margin-top: 0;
@@ -77,7 +81,7 @@ li{
 	font-size: 1.2em;
 	font-weight: bold;
 }
-#contact span, #competencies ul li, #affiliations li, #conferences li, #mailingLists li{
+#contact span, #environments li, #meetups li, #conferences li, #mailingLists li{
 	background: #EEE;
 	display: inline-block;
 	margin: 0.4em;
@@ -87,10 +91,10 @@ li{
     *display: inline;
     _height: 1px;
 }
-#affiliations li, #conferences li{
+#meetups li, #conferences li{
 	padding: 0.5em;
 }
-#affiliations .location, #conferences .location{
+#conferences .location{
 	color: #444;
 	font-size: 0.9em;
 }
