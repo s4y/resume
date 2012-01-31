@@ -53,7 +53,7 @@
 		success: function(data){
 			if (data) {
 				document.title = data.name + ' – Résumé'
-				$(document.body).append(function(){
+				$('#footer').before(function(){
 					return haj(stencil(template, data));
 				});
 			} else {
