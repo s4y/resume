@@ -6,32 +6,31 @@
 	],
 	"experience": [
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
-				{
-					"name": "Envoy",
-					"description": "Developed Envoy (a Mac-native proprietary asset tracking system) to audit and manage 750+ client computers. Envoy sends in regular reports; lets users submit support requests; integrates with DeepTech\u2019s remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
-				},
-				{
-					"name": "Technician tools",
-					"description": "Frontend and backend development on web system used by technicians for asset tracking, case managment, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV calendars, and vendor APIs. Ongoing."
-				},
-				{
-					"name": "Hans Haacke: News",
-				"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke\u2019s “News” piece. Displayed in [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum, now in [SFMOMA\u2019s permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)."
-				},
-				{
-					"name": "Technical service and support",
-					"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site. (Emergencies only, lately.)"
-				},
-				{
-					"name": "Reverse engineering",
-					"description": "Reconstructed C code from an x86 executable."
-				},
-				{
-					"name": "Forensics",
-					"description": "Worked with the NYPD to recover data contributing to a criminal investigation."
-				}
-			]
-		},
+			{
+				"name": "Envoy",
+				"description": "Developed Envoy (a Mac-native proprietary asset tracking system) to audit and manage 750+ client computers. Envoy sends in regular reports; lets users submit support requests; integrates with DeepTech\u2019s remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
+			},
+			{
+				"name": "Technician tools",
+				"description": "Frontend and backend development on web system used by technicians for asset tracking, case managment, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV calendars, and vendor APIs. Ongoing."
+			},
+			{
+				"name": "Hans Haacke: News",
+			"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke\u2019s “News” piece. Displayed in [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum, now in [SFMOMA\u2019s permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)."
+			},
+			{
+				"name": "Technical service and support",
+				"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site. (Emergencies only, lately.)"
+			},
+			{
+				"name": "Reverse engineering",
+				"description": "Reconstructed C code from an x86 executable."
+			},
+			{
+				"name": "Forensics",
+				"description": "Worked with the NYPD to recover data contributing to a criminal investigation."
+			}
+		] },
 		{ "name": "Personal", "projects": [
 			{
 				"name": "Debugging",
