@@ -31,6 +31,12 @@
 				"description": "Worked with the NYPD to recover data contributing to a criminal investigation."
 			}
 		] },
+		{ "name": "DISTRO.fm", "time": { "start": "2010" }, "projects": [
+			{
+				"name": "Technical lead",
+				"description": "Part time, leading development on [DISTRO\u2019s music distribution platform](http://distro.fm/), a single-page webapp powered by Node.js and MongoDB."
+			}
+		] },
 		{ "name": "Personal", "projects": [
 			{
 				"name": "Debugging",
