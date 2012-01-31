@@ -8,7 +8,7 @@
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
 			{
 				"name": "Envoy",
-				"description": "Developed Envoy (a Mac-native proprietary asset tracking system) to audit and manage 750+ client computers. Envoy sends in regular reports; lets users submit support requests; integrates with DeepTech\u2019s remote access software; keeps itself up-to-date; and can be remotely reconfigured or uninstalled. Ongoing."
+				"description": "Developed Envoy, a Mac-native proprietary asset tracking system, to audit and manage 750+ client computers. Envoy sends in regular reports, lets users submit support requests, integrates with DeepTech\u2019s remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled. Ongoing."
 			},
 			{
 				"name": "Technician tools",
