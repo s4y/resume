@@ -5,7 +5,13 @@
 		{ "method": "telephone", "value": "+1 (973) 933-1442", "link": "tel:+19739331442" }
 	],
 	"experience": [
-		{ "name": "DeepTech, Inc.", "time": { "start": "2008" }, "projects": [
+		{ "name": "OkCupid", "time": { "start": "2012" }, "projects": [
+			{
+				"name": "Software Engineer",
+				"description": "Working on the OkCupid.com backend and infrastructure and developing new products."
+			}
+		] },
+		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "projects": [
 			{
 				"name": "Envoy",
 				"description": "Developed Envoy, a Mac-native proprietary asset tracking system, to audit and manage 750+ client computers. Envoy sends in regular reports, lets users submit support requests, integrates with DeepTech\u2019s remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled. Ongoing."
