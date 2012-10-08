@@ -8,7 +8,7 @@
 		{ "name": "OkCupid", "time": { "start": "2012" }, "projects": [
 			{
 				"name": "Software Engineer",
-				"description": "Working on the OkCupid.com backend and infrastructure and developing new products."
+				"description": "Working on OkCupid.com and new products."
 			}
 		] },
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "projects": [
@@ -26,7 +26,7 @@
 			},
 			{
 				"name": "Technical service and support",
-				"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site. (Emergencies only, lately.)"
+				"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site."
 			},
 			{
 				"name": "Reverse engineering",
