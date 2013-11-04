@@ -1,99 +1,53 @@
 {
 	"name": "Sidney San Martín",
 	"contact": [
-		{ "method": "email", "value": "hire@sidneysm.com", "link": "mailto:hire@sidneysm.com" },
-		{ "method": "telephone", "value": "+1 (973) 933-1442", "link": "tel:+19739331442" }
+		{ "method": "email", "value": "sidney@s4y.us", "link": "mailto:sidney@s4y.us" },
+		{ "method": "telephone", "value": "+1 (973) 342-3515", "link": "tel:+19733423515" }
 	],
 	"experience": [
 		{ "name": "OkCupid", "time": { "start": "2012" }, "projects": [
 			{
 				"name": "Software Engineer",
-				"description": "Working on OkCupid.com and new products."
+				"description": "Ongoing work on new products and site features. Mostly C++ and Python but some frontend too. Highlights include Crazy Blind Date, Locals, Facebook integration, and Bitcoin payments. Work on OkCupid\u2019s web server, core C++ library, and distrubuted matching system. Also includes assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid enginneering is small (~10 people) for a big site; I have a lot of independence."
 			}
 		] },
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "projects": [
 			{
 				"name": "Envoy",
-				"description": "Developed Envoy, a Mac-native proprietary asset tracking system, to audit and manage 750+ client computers. Envoy sends in regular reports, lets users submit support requests, integrates with DeepTech\u2019s remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled. Ongoing."
+				"description": "A proprietary asset tracking system to manage 750+ client Macs. Envoy sends in reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled."
 			},
 			{
 				"name": "Technician tools",
-				"description": "Frontend and backend development on web system used by technicians for asset tracking, case managment, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV calendars, and vendor APIs. Ongoing."
-			},
-			{
-				"name": "Hans Haacke: News",
-			"description": "Built a news extraction engine in Node.js based on [Readability](http://lab.arc90.com/experiments/readability/), powering Hans Haacke\u2019s “News” piece. Displayed in [“The Last Newspaper”](http://www.newmuseum.org/exhibitions/428) at the The New Museum, now in [SFMOMA\u2019s permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)."
+				"description": "Web system used by technicians for asset tracking, case managment, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV, and vendor APIs."
 			},
 			{
 				"name": "Technical service and support",
-				"description": "Served on DeepTech\u2019s Mac and network support team fixing problems over the phone, via remote access, and on site."
+				"description": "Onsite and remote client Mac and network support."
 			},
 			{
-				"name": "Reverse engineering",
-				"description": "Reconstructed C code from an x86 executable."
-			},
-			{
-				"name": "Forensics",
-				"description": "Worked with the NYPD to recover data contributing to a criminal investigation."
-			}
-		] },
-		{ "name": "DISTRO.fm", "time": { "start": "2010" }, "projects": [
-			{
-				"name": "Technical lead",
-				"description": "Part time, leading development on [DISTRO\u2019s music distribution platform](http://distro.fm/), a single-page webapp powered by Node.js and MongoDB."
+				"name": "Side projects",
+				"description": "- Hacked up a Node.js news extraction engine powered by [Readability](http://lab.arc90.com/experiments/readability/) for Hans Haacke\u2019s “News” (New Museum: [“The Last Newspaper”](http://archive.newmuseum.org/index.php/Detail/Occurrence/Show/occurrence_id/1080), SFMOMA: [permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255).)\n\n- Worked with the NYPD to recover data contributing to a criminal investigation.\n\n- Reconstructed code from an x86 binary."
 			}
 		] },
 		{ "name": "Personal", "projects": [
 			{
-				"name": "Debugging",
-				"description": "Reduce and report bugs in third-party software on a regular basis. Not afraid to go to the source (tracked a recent jQuery performance oddity back to its cause inside WebKit).\n\nCredited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754))."
+				"name": "Team(.cpp)",
+				"description": "My main side project right now is [Team](https://github.com/Sidnicious/team), a library that adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame( OkCupid)-style await blocks. I’m always down to talk about it."
 			},
 			{
 				"name": "Answering questions",
-				"description": "Enjoy helping other programmers, in the top 10% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious) for HTML- and JavaScript-related questions."
-			},
-			{
-				"name": "Hack Club",
-				"time": { "start": "2011", "end": "2011" },
-				"description": "Lead programmer on a team of three, built an autonomous lego robot in twelve solid hours at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. [Won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success)."
-			},
-			{
-				"name": "FIRST Team 555",
-				"time": { "start": "2003", "end": "2007" },
-				"description": "Lead programmer (2005-2007). Built competition robots which won regional championships and earned awards at regional and international levels."
-			}
-		] },
-		{ "name": "Current and upcoming", "projects": [
-			{
-				"name": "Git commit message formatting",
-				"description": "Right now, [Git](http://git-scm.com/) makes its users pre-format their commit messages (conventinally, by breaking each line at around 72-characters). Working on giving Git the ability to format commit messages when you view them instead."
+				"description": "Enjoy helping other programmers, in the top 10% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious) for HTML- and JavaScript-related answers."
 			},
 			{
 				"name": "Hacker School",
-				"description": "Attending batch[2] of [Hacker School](http://www.hackerschool.com/), a three-month, full time retreat where good programmers become better programmers together."
+				"time": { "start": 2012, "end": 2012 },
+				"description": "Batch[2] of [Hacker School](http://www.hackerschool.com/), a three-month, full time retreat for programmers. Worked on live video processing in JavaScript, coroutines, a Lisp interpreter, and more fun stuff."
+			},
+			{
+				"name": "Old stuff",
+				"description": "- Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)).\n\n- Lead programmer on a team of three at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. We built an autonomous Lego robot in twelve hours and [won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success).\n\n- Submitted a patch to Git to let it format commit messages when you view them, so that you don't rely on everyone else wrapping to 80 characters. Patch is ahead of its time, was rejected.\n\n- Lead programmer at DISTRO.fm, a (likely-)failed nonprofit music distribution platform.\n\n- Lead programmer on my high school's FIRST robotics team. Built competition robots which won regional championships and earned awards at regional and international levels."
 			}
 		] }
-	],
-	"environments": [
-		"JavaScript", "HTML", "CSS", "jQuery", "Node.js", "PHP", "Objective-C", "basic x86 assembly", "Bash", "LassoScript"
-	],
-	"meetups": [
-		{
-			"name": "NYC.js",
-			"url": "http://groups.google.com/group/nycjs/"
-		},
-		{
-			"name": "Hack and Tell",
-			"url": "http://hackandtell.org/"
-		},
-		{
-			"name": "CTO School",
-			"url": "http://www.ctoschool.org/"
-		},
-		{
-			"name": "New York MongoDB User Group",
-			"url": "http://www.meetup.com/New-York-MongoDB-User-Group/"
-		}
 	],
 	"conferences": [
 		{
@@ -109,15 +63,16 @@
 			"url": "http://developer.apple.com/wwdc/"
 		},
 		{
-			"name": "The Last Hope",
-			"year": "2008",
-			"location": "New York, NY, United States",
-			"url": "http://www.thelasthope.org/"
+			"name": "HOPE",
+			"year": "2008-present",
+			"extra":"trusted ops",
+			"location": "New York, NY, USA",
+			"url": "http://hope.net/"
 		},
 		{
 			"name": "Hacking at Random",
 			"year": "2009",
-			"location": "Vierhouten, The Netherlands",
+			"location": "Vierhouten, Netherlands",
 			"url": "https://wiki.har2009.org/"
 		},
 		{
@@ -128,18 +83,11 @@
 			"url": "http://events.ccc.de/congress/2009/"
 		},
 		{
-			"name": "The Next Hope",
-			"year": "2010",
-			"extra":"trusted ops",
-			"location": "New York, NY, United States",
-			"url": "http://thenexthope.org/"
-		},
-		{
-			"name": "World Maker Faire",
-			"year": "2011",
+			"name": "Maker Faire",
+			"year": "2011-present",
 			"extra":"volunteer",
-			"location": "Queens, NY, United States",
-			"url": "http://makerfaire.com/newyork/2011/"
+			"location": "Queens, NY, USA",
+			"url": "http://makerfaire.com/newyork/"
 		}
 	]
 }

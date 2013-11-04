@@ -39,7 +39,9 @@ h2{
 h3{
 	font-size: 1em;
 	font-style: italic;
-	margin-bottom: 0;
+	margin-bottom: 0.25em;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #ccc;
 }
 p{
 	margin: 0.5em 0;
@@ -53,11 +55,13 @@ a{
 a:visited{
 	color: #005;
 }
-ul{
+#resume > ul,
+#resume > ul{
 	margin: 0.5em 0;
 	padding-left: 1em;
 }
-li{
+#resume > ul > li,
+#resume > ul > li > ul > li{
 	list-style: none;
 }
 .times{
