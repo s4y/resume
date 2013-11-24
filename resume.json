@@ -32,7 +32,7 @@
 		{ "name": "Personal", "projects": [
 			{
 				"name": "Team(.cpp)",
-				"description": "My main side project right now is [Team](https://github.com/Sidnicious/team), a library that adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame( OkCupid)-style await blocks. I’m always down to talk about it."
+				"description": "My main side project right now is [Team](https://github.com/Sidnicious/team), a library that adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame (OkCupid) style await blocks. I’m always down to talk about it."
 			},
 			{
 				"name": "Answering questions",
