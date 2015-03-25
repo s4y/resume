@@ -41,7 +41,7 @@
 			{
 				"name": "The Recurse Center",
 				"time": { "start": 2012, "end": 2012 },
-				"description": "Batch[2] of [Hacker School](http://www.hackerschool.com/), a three-month, full time retreat for programmers. Worked on live video processing in JavaScript, coroutines, a Lisp interpreter, and more fun stuff."
+				"description": "Batch[2] of [the Recurse Center](https://www.recurse.com/), a three-month, full time retreat for programmers. Worked on live video processing in JavaScript, coroutines, a Lisp interpreter, and more fun stuff."
 			},
 			{
 				"name": "Old stuff",
