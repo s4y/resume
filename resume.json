@@ -39,7 +39,7 @@
 				"description": "Enjoy helping other programmers, in the top 10% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious) for HTML- and JavaScript-related answers."
 			},
 			{
-				"name": "Hacker School",
+				"name": "The Recurse Center",
 				"time": { "start": 2012, "end": 2012 },
 				"description": "Batch[2] of [Hacker School](http://www.hackerschool.com/), a three-month, full time retreat for programmers. Worked on live video processing in JavaScript, coroutines, a Lisp interpreter, and more fun stuff."
 			},
