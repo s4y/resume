@@ -5,16 +5,22 @@
 		{ "method": "telephone", "value": "+1 (973) 342-3515", "link": "tel:+19733423515" }
 	],
 	"experience": [
-		{ "name": "OkCupid", "time": { "start": "2012" }, "projects": [
+		{ "name": "Keybase", "time": { "start": "2015", "end": "2015" }, "projects": [
 			{
 				"name": "Software Engineer",
-				"description": "Ongoing work on new products and site features. Mostly C++ and Python but some frontend too. Highlights include Crazy Blind Date, Locals, Facebook integration, and Bitcoin payments. Work on OkCupid\u2019s web server, core C++ library, and distrubuted matching system. Also includes assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid enginneering is small (~10 people) for a big site; I have a lot of independence."
+				"description": "Generalist at a 15-person startup building open source crypto software. Worked on the backend, core Golang libraries, and native apps (mostly iOS and Mac). Parted ways after ~5 months due to fit issues (happy to discuss)."
+			}
+		] },
+		{ "name": "OkCupid", "time": { "start": "2012", "end": "2015" }, "projects": [
+			{
+				"name": "Software Engineer",
+				"description": "Ongoing work on new products and site features. iOS, C++, Python and a touch of frontend. Spent last year as iOS lead. Otherwise worked on OkCupid\u2019s web server, core C++ libraries, and distrubuted matching system. Also includes assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid enginneering is small (~10 people) for a big site."
 			}
 		] },
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "projects": [
 			{
 				"name": "Envoy",
-				"description": "A proprietary asset tracking system to manage 750+ client Macs. Envoy sends in reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled."
+				"description": "Built a proprietary Mac app to help manage 750+ client Macs. Envoy sends in reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled."
 			},
 			{
 				"name": "Technician tools",
@@ -31,12 +37,16 @@
 		] },
 		{ "name": "Personal", "projects": [
 			{
+				"name": "Hoisin",
+				"description": "A terminal that's not just a terminal emulator — supports live-updating HTML output too."
+			},
+			{
 				"name": "Team(.cpp)",
-				"description": "My main side project right now is [Team](https://github.com/Sidnicious/team), a library that adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame (OkCupid) style await blocks. I’m always down to talk about it."
+				"description": "[Team](https://github.com/Sidnicious/team) adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame( OkCupid)-style await blocks. I’m always down to talk about it."
 			},
 			{
 				"name": "Answering questions",
-				"description": "Enjoy helping other programmers, top 2% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious) this year."
+				"description": "Enjoy helping other programmers, top 2% [on Stack Overflow](http://stackoverflow.com/users/84745/sidnicious)."
 			},
 			{
 				"name": "The Recurse Center",
@@ -45,7 +55,7 @@
 			},
 			{
 				"name": "Old stuff",
-				"description": "- Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)).\n\n- Lead programmer on a team of three at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. We built an autonomous Lego robot in twelve hours and [won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success).\n\n- Submitted a patch to Git to let it format commit messages when you view them, so that you don't rely on everyone else wrapping to 80 characters. Patch is ahead of its time, was rejected.\n\n- Lead programmer at DISTRO.fm, a (likely-)failed nonprofit music distribution platform.\n\n- Lead programmer on my high school's FIRST robotics team. Built competition robots which won regional championships and earned awards at regional and international levels."
+				"description": "- Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)).\n\n- Lead programmer on a team of three at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. We built an autonomous Lego robot in twelve hours and [won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success).\n\n- Submitted a patch to Git to let it format commit messages when you view them, so that you don't rely on everyone else wrapping to 80 characters. Patch is ahead of its time, was rejected.\n\n- Lead programmer at DISTRO.fm, a failed nonprofit music distribution platform.\n\n- Lead programmer on my high school's FIRST robotics team. Built competition robots which won regional championships and earned awards at regional and international levels."
 			}
 		] }
 	],
@@ -76,11 +86,11 @@
 			"url": "https://wiki.har2009.org/"
 		},
 		{
-			"name": "26C3",
-			"year": "2009",
+			"name": "Chaos Communication Congress",
+			"year": "2009-present",
 			"extra": "volunteer",
 			"location": "Berlin, Germany",
-			"url": "http://events.ccc.de/congress/2009/"
+			"url": "http://events.ccc.de/"
 		},
 		{
 			"name": "Maker Faire",
