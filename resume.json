@@ -38,7 +38,7 @@
 		{ "name": "Personal", "projects": [
 			{
 				"name": "Hoisin",
-				"description": "A terminal that's not just a terminal emulator — supports live-updating HTML output too."
+				"description": "[A terminal](https://github.com/Sidnicious/Hoisin) that's not just a terminal emulator — supports live-updating HTML output too."
 			},
 			{
 				"name": "Team(.cpp)",
