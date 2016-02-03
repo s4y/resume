@@ -9,33 +9,33 @@
 		var converter = new Showdown.converter(),
 			template = ['#resume',
 				['#info',
-					['%p#name', {$key: 'name'}],
+					['%h1', {$key: 'name'}],
 					['%p#contact', {$key:'contact', $children:['%span', {$key:'method'}, ': ', ['%a', {href:{$key:'link'}}, {$key:'value'}]]}]
 				],
 				{$test: {$key: 'experience'}, $if: [
-					['%h1', "Experience"],
+					['%h2', "Experience"],
 					['%ul#experience', {$key: 'experience', $children:[ '%li',
-						['%h2', {$key:'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
+						['%h3', {$key:'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
 						{$test: { $key: 'projects' }, $if:['%ul.projects', {$key: 'projects', $children:[ '%li',
-							['%h3', {$key: 'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
+							['%h4', {$key: 'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
 							{$key: 'description', $handler:parseMarkdown}
 						]}]}
 					]}]
 				]},
 				{$test: { $key: 'environments' }, $if:[
-					['%h1', 'Languages and Tools'],
+					['%h2', 'Languages and Tools'],
 					['%ul#environments', {$key: 'environments', $children:[
 						'%li', {$key: ''}
 					]}]
 				]},
 				{$test: { $key: 'meetups' }, $if:[
-					['%h1', 'Favorite Meetups'],
+					['%h2', 'Favorite Meetups'],
 					['%ul#meetups', {$key: 'meetups', $children:[ '%li',
 						['%div', ['%a', {href: {$key:'url'}}, {$key: 'name'}]]
 					]}]
 				]},
 				{$test: { $key: 'conferences' }, $if:[
-					['%h1', 'Conferences'],
+					['%h2', 'Conferences'],
 					['%ul#conferences', {$key: 'conferences', $children:[ '%li',
 						['%div', ['%a', {href: {$key:'url'}}, {$key: 'name'}], {$test: { $key: 'extra' }, $if:[' ', ['%span', '(', {$key:'extra'}, ')']]}, {$test: { $key: 'year' }, $if:[' ', ['%span.times', {$key:'year'}]]}], ['%div.location', {$key: 'location'}]
 					]}]

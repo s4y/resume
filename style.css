@@ -1,13 +1,3 @@
-/* Disabling print styles for the moment. Showing URLs inline adds too much
- * bloat, and removing link underlines makes PDFs less useful.
-@media print{
-	a{
-		text-decoration: none;
-	}
-	li ul li, p{
-		page-break-inside: avoid;
-	}
-} */
 body{
 	font: 16px Garamond, serif;
 	padding: 0.5em 2em;
@@ -24,29 +14,32 @@ body{
 #loadError.visible{
 	display: block;
 }
-h1, h2, h3{
-	page-break-after: avoid;
+
+li ul li, p{
+	page-break-inside: avoid;
 }
-h2, h3{
+h1, h2, h3, h4 {
+	page-break-after: avoid;
+	margin: 1em 0;
+}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.2em; }
+h3{
+	font-size: 1.1em;
 	font-weight: normal;
 }
-h1{
-	font-size: 1.2em;
-}
-h2{
-	font-size: 1.1em;
-}
-h3{
+h4{
 	font-size: 1em;
 	font-style: italic;
 	margin-bottom: 0.25em;
 	padding-bottom: 0.25em;
 	border-bottom: 1px solid #ccc;
+	font-weight: normal;
 }
 p{
 	margin: 0.5em 0;
 }
-h1+p, h2+p, h3+p{
+h1+p, h2+p, h3+p, h4+p{
 	margin-top: 0;
 }
 a{
@@ -75,25 +68,20 @@ a:visited{
 }
 #info{
 	border-bottom: 1px solid #CCC;
-	padding: 1em 5em;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-#info p{
+#info > h1 {
+	margin: 0.5em 0;
+}
+#contact {
+	text-align: center;
 	margin: 0.3em;
 }
-#name{
-	font-size: 1.2em;
-	font-weight: bold;
-}
 #contact span, #environments li, #meetups li, #conferences li, #mailingLists li{
-	background: #EEE;
 	display: inline-block;
 	margin: 0.4em;
-	padding: 0.2em;
-	/* IE 6 */
-    zoom: 1;
-    *display: inline;
-    _height: 1px;
 }
 #meetups li, #conferences li{
 	padding: 0.5em;
@@ -109,4 +97,10 @@ a:visited{
 	border-top: 1px solid #CCC;
 	padding-top: 1em;
 	color: #555;
+}
+
+@media (max-width: 450px) {
+	#info {
+		flex-direction: column;
+	}
 }
