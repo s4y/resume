@@ -1,7 +1,7 @@
 (function(){
 	var template = (function(){
 		function parseMarkdown(markdown){
-			return $(converter.makeHtml(markdown)).get().reduce(function(df, el){ df.appendChild(el); return df }, document.createDocumentFragment());
+			return $(converter.makeHtml(markdown)).get().reduce(function(df, el){ df.appendChild(el); return df; }, document.createDocumentFragment());
 		}
 		function stringForTime(time){
 			return time && time.start ? ('(' + time.start + (time.start !== time.end ? '-' + (time.end || 'present') : '') + ')') : '';
@@ -52,7 +52,7 @@
 		dataType: 'json',
 		success: function(data){
 			if (data) {
-				document.title = data.name + ' – Résumé'
+				document.title = data.name + ' – Résumé';
 				$('#footer').before(function(){
 					return haj(stencil(template, data));
 				});
