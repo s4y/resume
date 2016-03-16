@@ -5,44 +5,41 @@
 		{ "method": "telephone", "value": "+1 (973) 342-3515", "link": "tel:+19733423515" }
 	],
 	"experience": [
-		{ "name": "Keybase", "time": { "start": "2015", "end": "2015" }, "projects": [
+		{ "name": "Keybase", "time": { "start": "2015", "end": "2015" }, "title": "Software Engineer", "description":
+			"Generalist at a 15-person startup building an encrypted filesystem with open source clients. Worked on backend, core Golang libraries, developer documentation, and iOS and Mac apps. Parted ways after ~5 months due to fit issues (happy to discuss)."
+		},
+		{ "name": "OkCupid", "time": { "start": "2012", "end": "2015" }, "title": "Software Engineer", "description":
+			"Spent last year as iOS lead. Before that, worked on OkCupid\u2019s open source web server, core C++ libraries, and distributed matching system. Refactored site components and designed new APIs for them. Also worked on assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid is a big website with a small (~10-person) engineering team, so I had a lot of flexibility and independence."
+		},
+		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "title": "Technician/Developer",
+			"description": "Joined as a Mac and network support technician, but quickly added \"programmer\" to my responsibilities.",
+			"projects": [
+				{
+					"name": "Envoy",
+					"description": "My first Mac app: an in-house tool to manage 750+ client Macs. Envoy generates health reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled. Responsibilities are split between a daemon running as root and an agent running as the logged-in user(s)."
+				},
+				{
+					"name": "Technician tools",
+					"description": "Helped build a website and backend used by technicians for asset tracking, case management, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV, and vendor APIs. Built JavaScript UI libraries that less-technical colleagues could control from HTML."
+				},
+				{
+					"name": "Technical service and support",
+					"description": "Did onsite and remote Mac and network support, installations, for clients."
+				},
+				{
+					"name": "Minor projects",
+					"description": "- Made a Node.js news extraction engine powered by [Readability](http://lab.arc90.com/experiments/readability/) for Hans Haacke\u2019s “News” (New Museum: [“The Last Newspaper”](http://archive.newmuseum.org/index.php/Detail/Occurrence/Show/occurrence_id/1080), SFMOMA: [permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)).\n\n- Worked with the NYPD to recover data contributing to a criminal investigation.\n\n- Reconstructed code from an x86 binary."
+				}
+			]
+		},
+		{ "name": "Personal projects", "projects": [
 			{
-				"name": "Software Engineer",
-				"description": "Generalist at a 15-person startup building open source crypto software. Worked on the backend, core Golang libraries, and native apps (mostly iOS and Mac). Parted ways after ~5 months due to fit issues (happy to discuss)."
-			}
-		] },
-		{ "name": "OkCupid", "time": { "start": "2012", "end": "2015" }, "projects": [
-			{
-				"name": "Software Engineer",
-				"description": "Ongoing work on new products and site features. iOS, C++, Python and a touch of frontend. Spent last year as iOS lead. Otherwise worked on OkCupid\u2019s web server, core C++ libraries, and distrubuted matching system. Also includes assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid enginneering is small (~10 people) for a big site."
-			}
-		] },
-		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "projects": [
-			{
-				"name": "Envoy",
-				"description": "Built a proprietary Mac app to help manage 750+ client Macs. Envoy sends in reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled."
-			},
-			{
-				"name": "Technician tools",
-				"description": "Web system used by technicians for asset tracking, case management, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV, and vendor APIs."
-			},
-			{
-				"name": "Technical service and support",
-				"description": "Onsite and remote client Mac and network support."
-			},
-			{
-				"name": "Side projects",
-				"description": "- Hacked up a Node.js news extraction engine powered by [Readability](http://lab.arc90.com/experiments/readability/) for Hans Haacke\u2019s “News” (New Museum: [“The Last Newspaper”](http://archive.newmuseum.org/index.php/Detail/Occurrence/Show/occurrence_id/1080), SFMOMA: [permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255).)\n\n- Worked with the NYPD to recover data contributing to a criminal investigation.\n\n- Reconstructed code from an x86 binary."
-			}
-		] },
-		{ "name": "Personal", "projects": [
-			{
-				"name": "Hoisin",
-				"description": "[A terminal](https://github.com/Sidnicious/Hoisin) that's not just a terminal emulator — supports live-updating HTML output too."
+				"name": "Hoisin(.app)",
+				"description": "[A terminal](https://github.com/Sidnicious/Hoisin) for OS X that's gives each process a separate PTTY and aims to support inline GUIs. Early in development."
 			},
 			{
 				"name": "Team(.cpp)",
-				"description": "[Team](https://github.com/Sidnicious/team) adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame( OkCupid)-style await blocks. I’m always down to talk about it."
+				"description": "[A library](https://github.com/Sidnicious/team) that adds coroutines and async semantics to C++. Includes Go-style channels, Python-style generators, and Tame/OkCupid-style await blocks."
 			},
 			{
 				"name": "Answering questions",

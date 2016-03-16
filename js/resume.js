@@ -16,6 +16,7 @@
 					['%h2', "Experience"],
 					['%ul#experience', {$key: 'experience', $children:[ '%li',
 						['%h3', {$key:'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
+						{$test: { $key: 'description'}, $if:{$key: 'description', $handler:parseMarkdown}},
 						{$test: { $key: 'projects' }, $if:['%ul.projects', {$key: 'projects', $children:[ '%li',
 							['%h4', {$key: 'name'}, {$test: { $key: 'time' }, $if:[' ', ['%span.times', {$key:'time', $handler:stringForTime}]]}],
 							{$key: 'description', $handler:parseMarkdown}

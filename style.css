@@ -1,5 +1,5 @@
 body{
-	font: 16px Garamond, serif;
+	font: 16px serif;
 	padding: 0.5em 2em;
 }
 .error{
@@ -26,15 +26,11 @@ h1 { font-size: 1.5em; }
 h2 { font-size: 1.2em; }
 h3{
 	font-size: 1.1em;
-	font-weight: normal;
+	margin-bottom: 0;
 }
 h4{
 	font-size: 1em;
-	font-style: italic;
-	margin-bottom: 0.25em;
-	padding-bottom: 0.25em;
-	border-bottom: 1px solid #ccc;
-	font-weight: normal;
+	margin-bottom: 0;
 }
 p{
 	margin: 0.5em 0;
@@ -48,10 +44,9 @@ a{
 a:visited{
 	color: #005;
 }
-#resume > ul,
-#resume > ul{
+#resume ul {
 	margin: 0.5em 0;
-	padding-left: 1em;
+	padding: 0 0 0 1em;
 }
 #resume > ul > li,
 #resume > ul > li > ul > li{
