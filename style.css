@@ -1,6 +1,5 @@
 body{
-	font: 16px serif;
-	padding: 0.5em 2em;
+	font: 14px arial, sans-serif;
 }
 .error{
 	background: #FCC;
@@ -26,7 +25,7 @@ h1 { font-size: 1.5em; }
 h2 { font-size: 1.2em; }
 h3{
 	font-size: 1.1em;
-	margin-bottom: 0;
+	margin-bottom: 0.25em;
 }
 h4{
 	font-size: 1em;
@@ -53,13 +52,10 @@ a:visited{
 	list-style: none;
 }
 .times{
-	font-size: 0.8em;
 	font-weight: normal;
-	vertical-align: middle;
 }
 #resume{
 	margin: 0 auto;
-	max-width: 50em;
 }
 #info{
 	border-bottom: 1px solid #CCC;
@@ -77,6 +73,9 @@ a:visited{
 #contact span, #environments li, #meetups li, #conferences li, #mailingLists li{
 	display: inline-block;
 	margin: 0.4em;
+}
+#resume #conferences {
+	margin: 0;
 }
 #meetups li, #conferences li{
 	padding: 0.5em;
@@ -97,5 +96,11 @@ a:visited{
 @media (max-width: 450px) {
 	#info {
 		flex-direction: column;
+	}
+}
+
+@media screen {
+	#resume {
+		max-width: 60em;
 	}
 }

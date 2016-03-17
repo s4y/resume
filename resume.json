@@ -2,40 +2,36 @@
 	"name": "Sidney San Martín",
 	"contact": [
 		{ "method": "email", "value": "sidney@s4y.us", "link": "mailto:sidney@s4y.us" },
-		{ "method": "telephone", "value": "+1 (973) 342-3515", "link": "tel:+19733423515" }
+		{ "method": "telephone", "value": "973-342-3515", "link": "tel:+19733423515" }
 	],
 	"experience": [
 		{ "name": "Keybase", "time": { "start": "2015", "end": "2015" }, "title": "Software Engineer", "description":
-			"Generalist at a 15-person startup building an encrypted filesystem with open source clients. Worked on backend, core Golang libraries, developer documentation, and iOS and Mac apps. Parted ways after ~5 months due to fit issues (happy to discuss)."
+			"Generalist at a 15-person startup building an encrypted filesystem with open source clients. Worked on backend, core Golang libraries, developer documentation, and iOS and Mac apps."
 		},
 		{ "name": "OkCupid", "time": { "start": "2012", "end": "2015" }, "title": "Software Engineer", "description":
-			"Spent last year as iOS lead. Before that, worked on OkCupid\u2019s open source web server, core C++ libraries, and distributed matching system. Refactored site components and designed new APIs for them. Also worked on assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid is a big website with a small (~10-person) engineering team, so I had a lot of flexibility and independence."
+			"Spent last year as iOS lead. Before that, worked on OkCupid\u2019s open source web server, core C++ libraries, and distributed matching system. Refactored site components and designed new APIs for them. Also worked on assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid is a big website with a small (~10-person) engineering team, so I had freedom and independence."
 		},
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "title": "Technician/Developer",
-			"description": "Joined as a Mac and network support technician, but quickly added \"programmer\" to my responsibilities.",
+			"description": "Technician and developer at a Mac-focused IT firm.",
 			"projects": [
 				{
-					"name": "Envoy",
-					"description": "My first Mac app: an in-house tool to manage 750+ client Macs. Envoy generates health reports, lets users submit support requests, integrates with remote access software, keeps itself up-to-date, and can be remotely reconfigured or uninstalled. Responsibilities are split between a daemon running as root and an agent running as the logged-in user(s)."
+					"name": "Envoy(.app)",
+					"description": "Built an agent to manage 750+ client Macs which generates health reports, lets users submit support requests, integrates with remote access software, keeps up-to-date, and can be remotely reconfigured or uninstalled. Responsibilities are split between a root-level daemon and an agent running as the logged-in user(s)."
 				},
 				{
-					"name": "Technician tools",
+					"name": "Technician tools(.js)",
 					"description": "Helped build a website and backend used by technicians for asset tracking, case management, and scheduling. Talks to Envoy, PBX, remote access system, CalDAV, and vendor APIs. Built JavaScript UI libraries that less-technical colleagues could control from HTML."
 				},
 				{
-					"name": "Technical service and support",
-					"description": "Did onsite and remote Mac and network support, installations, for clients."
-				},
-				{
-					"name": "Minor projects",
-					"description": "- Made a Node.js news extraction engine powered by [Readability](http://lab.arc90.com/experiments/readability/) for Hans Haacke\u2019s “News” (New Museum: [“The Last Newspaper”](http://archive.newmuseum.org/index.php/Detail/Occurrence/Show/occurrence_id/1080), SFMOMA: [permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)).\n\n- Worked with the NYPD to recover data contributing to a criminal investigation.\n\n- Reconstructed code from an x86 binary."
+					"name": "Minor projects(.{js,asm})",
+					"description": "- Built a news extraction engine powered by [Readability](http://lab.arc90.com/experiments/readability/) for Hans Haacke\u2019s “News” art piece (New Museum: [“The Last Newspaper”](http://archive.newmuseum.org/index.php/Detail/Occurrence/Show/occurrence_id/1080), SFMOMA: [permanent collection](http://www.sfmoma.org/explore/collection/artwork/126255)).\n\n- Worked with the NYPD to recover data contributing to a criminal investigation.\n\n- Reconstructed code from an x86 binary."
 				}
 			]
 		},
 		{ "name": "Personal projects", "projects": [
 			{
 				"name": "Hoisin(.app)",
-				"description": "[A terminal](https://github.com/Sidnicious/Hoisin) for OS X that's gives each process a separate PTTY and aims to support inline GUIs. Early in development."
+				"description": "[A terminal](https://github.com/Sidnicious/Hoisin) for OS X that's gives each process an isolated pty and aims to support inline GUIs. Early in development."
 			},
 			{
 				"name": "Team(.cpp)",
@@ -52,7 +48,7 @@
 			},
 			{
 				"name": "Old stuff",
-				"description": "- Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)).\n\n- Lead programmer on a team of three at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. We built an autonomous Lego robot in twelve hours and [won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success).\n\n- Submitted a patch to Git to let it format commit messages when you view them, so that you don't rely on everyone else wrapping to 80 characters. Patch is ahead of its time, was rejected.\n\n- Lead programmer at DISTRO.fm, a failed nonprofit music distribution platform.\n\n- Lead programmer on my high school's FIRST robotics team. Built competition robots which won regional championships and earned awards at regional and international levels."
+				"description": "- Credited for security issues in Mac OS and iOS ([CVE-2010-0537](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0537), [CVE-2010-1754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1754)).\n\n- Lead programmer on a team of three at NYC\u2019s first (and so far, only) Hack Club run by Reddit-cofounder Alexis Ohanian. We built an autonomous Lego robot in twelve hours and [won fame and fortune](http://breadpig.com/blogs/news/5863229-hack-club-1-total-success).\n\n- Submitted a patch to Git to format commit messages when you view them, so that you don't rely on others wrapping to 80 characters. Patch is ahead of its time, was rejected.\n\n- Lead programmer at DISTRO.fm, a failed nonprofit music distribution platform.\n\n- Lead programmer on my high school's FIRST robotics team. Built competition robots which won regional championships and earned awards at regional and international levels."
 			}
 		] }
 	],
