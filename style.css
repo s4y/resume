@@ -1,5 +1,7 @@
 body{
 	font: 14px arial, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	padding: 0 0.5em;
 }
 .error{
 	background: #FCC;
