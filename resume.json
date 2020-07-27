@@ -5,11 +5,14 @@
 		{ "method": "telephone", "value": "973-342-3515", "link": "tel:+19733423515" }
 	],
 	"experience": [
+		{ "name": "Google", "time": { "start": "2016", "end": "2020" }, "title": "Software Engineer, Chrome", "description":
+			"Software engineer on a team of four working on Chrome for Mac. Focused on UI, OS integration, performance, and power usage. Used reverse engineering techniques to work around macOS bugs and find undocumented APIs to make Chrome better and faster. All work is [open source](https://chromium-review.googlesource.com/q/author:sdy%2540chromium.org)."
+		},
 		{ "name": "Keybase", "time": { "start": "2015", "end": "2015" }, "title": "Software Engineer", "description":
-			"Generalist at a 15-person startup building an encrypted filesystem with open source clients. Worked on backend, core Golang libraries, developer documentation, and iOS and Mac apps."
+			"Generalist at a startup building an encrypted filesystem with open source clients. Worked on backend, core Golang libraries, developer documentation, and iOS and Mac apps."
 		},
 		{ "name": "OkCupid", "time": { "start": "2012", "end": "2015" }, "title": "Software Engineer", "description":
-			"Spent last year as iOS lead. Before that, worked on OkCupid\u2019s open source web server, core C++ libraries, and distributed matching system. Refactored site components and designed new APIs for them. Also worked on assorted security and side projects (fixing data leaks, internal security, dev tooling).\n\nOkCupid is a big website with a small (~10-person) engineering team, so I had freedom and independence."
+			"Spent last year as iOS lead. Before that, worked on OkCupid\u2019s open source web server, core C++ libraries, and distributed matching system. Refactored site components and designed new APIs for them. Also worked on assorted security and side projects (fixing data leaks, internal security, dev tooling)."
 		},
 		{ "name": "DeepTech, Inc.", "time": { "start": "2008", "end": "2012" }, "title": "Technician/Developer",
 			"description": "Technician and developer at a Mac-focused IT firm.",
